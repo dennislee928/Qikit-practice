@@ -1,5 +1,10 @@
+import sys
+print("Python executable:", sys.executable)
+print("sys.path:", sys.path)
+
 from qiskit import Aer, execute  # 新增 execute 的匯入
 from qiskit import QuantumCircuit
+
 from setuptools import setup, find_packages  # type: ignore #import q-computing library
 circuit = QuantumCircuit(1, 1) #define input array to be(1, 1)
 circuit.h(0)#use Hadamard gate method to compress the input array
